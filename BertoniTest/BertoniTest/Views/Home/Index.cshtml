@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <!-- Example split danger button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" id="btnAlbumes">Action</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu" id="ddlAlbumes">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="AlbumView">Visualizar Álbum</button>
+</div>
+<div id="contenedorPhotos">
+    <h2 id="AlbumTitle"></h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">AlbumId</th>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Url</th>
+                <th scope="col">ThumbnailUrl</th>
+                <th scope="col">Thumbnail</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="photos"></tbody>
+    </table>
+</div>
+<div id="contenedorComentarios">
+    <h2>Comentarios</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">PostId</th>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">e-mail</th>
+                <th scope="col">Body</th>
+            </tr>
+        </thead>
+        <tbody id="comentarios"></tbody>
+    </table>
+</div>
+@section scripts{
+    <script>
+
+
+    </script>
+}
